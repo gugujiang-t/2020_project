@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>化妆品许可证信息</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../static/assets/img/icon.ico" type="image/x-icon"/>
+	
+	<!-- Fonts and icons -->
+	<script src="../../static/assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['../../static/assets/css/fonts.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="../../static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../static/assets/css/azzara.min.css">
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="../../static/assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!--
+				Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
+		-->
+		<div class="main-header" data-background-color="purple">
+			<!-- Logo Header -->
+			<div class="logo-header">
+				
+				<a href="index.html" class="logo">
+					<img src="../../static/assets/img/logohome.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="fa fa-bars"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+				<div class="navbar-minimize">
+					<button class="btn btn-minimize btn-rounded">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+
+			<!-- End Navbar -->
+		</div>
+		<!-- Sidebar -->
+		<div class="sidebar">
+			
+			<div class="sidebar-wrapper scrollbar-inner">
+				<div class="sidebar-content">
+
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="index.html">
+								<i class="fas fa-home"></i>
+								<p>Home</p>
+
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">INFORMATION</h4>
+						</li>
+
+
+						<!-- Maps -->
+                        <li class="nav-item active submenu">
+							<a data-toggle="collapse" href="#maps">
+								<i class="fas fa-map-marker-alt"></i>
+								<p>地域分布</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse show" id="maps">
+								<ul class="nav nav-collapse">
+                                    <!-- 企业位置 -->
+									<li class="active">
+										<a href="/dist_loc">
+											<span class="sub-item">企业位置</span>
+										</a>
+									</li>
+                                    <!-- 企业经营产品 -->
+									<li>
+										<a href="/dist_item">
+											<span class="sub-item">企业经营产品</span>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+                        <!-- Charts -->
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#charts">
+								<i class="far fa-chart-bar"></i>
+								<p>许可证统计</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="charts">
+								<ul class="nav nav-collapse">
+                                    <!-- 发证年份 -->
+									<li>
+										<a href="/cert_issue">
+											<span class="sub-item">发证时间</span>
+										</a>
+									</li>
+                                    <!-- 有效时长 -->
+									<li>
+										<a href="/cert_life">
+											<span class="sub-item">有效时长</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Tables -->
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#tables">
+								<i class="fas fa-table"></i>
+								<p>数据表格</p>
+                                <span class="caret"></span>
+							</a>
+							<div class="collapse" id="tables">
+								<ul class="nav nav-collapse">
+
+									<li>
+										<a href="/tables/datatables">
+											<span class="sub-item">化妆品生产许可证信息</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+                        <!-- 团队成员 -->
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#forms">
+								<i class="fas fa-users"></i>
+								<p>团队成员</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="forms">
+								<ul class="nav nav-collapse">
+									<li>
+                                        <a><span class="sub-item">陈依苓</span></a>
+									</li>
+                                    <li>
+                                        <a><span class="sub-item">白筱菡</span></a>
+
+									</li>
+                                    <li>
+                                        <a><span class="sub-item">许枫</span></a>
+									</li>
+                                    <li>
+                                        <a><span class="sub-item">张诗毓</span></a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+        <div class="main-panel">
+			<div class="content">
+                <div class="page-inner">
+                <div class="page-header">
+					    <h4 class="page-title">地域分布</h4>
+                        <ul class="breadcrumbs">
+							<li class="nav-home">
+								<a href="#">
+									<i class="flaticon-home"></i>
+								</a>
+							</li>
+							<li class="separator">
+								<i class="flaticon-right-arrow"></i>
+							</li>
+							<li class="nav-item">
+								<a href="#">Maps</a>
+							</li>
+							<li class="separator">
+								<i class="flaticon-right-arrow"></i>
+							</li>
+							<li class="nav-item">
+								<a href="#">Echarts Map</a>
+							</li>
+						</ul>
+                </div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card card-transparent">
+							<div class="card-header">
+								<h4 class="card-title text-left">
+									企业位置
+								</h4>
+							</div>
+							<div class="card-body">
+								<div class="col-md-10 ml-auto mr-auto">
+									<div class="mapcontainer">
+										<div id="geoMap"  style="height: 500px"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-6">
+                        <div class="card card-transparent">
+                        <div class="card-header">
+
+								<h4 class="card-title text-left">
+									数量分布
+								</h4>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="col-md-10 ml-auto mr-auto">
+                                <div class="chart-container">
+                                    <div id="horizontalBarChart" style="height:480px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+				</div>
+                </div>
+            </div>
+			
+		</div>
+		
+
+	</div>
+	<!--   Core JS Files   -->
+	<script src="../../static/assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../../static/assets/js/core/popper.min.js"></script>
+	<script src="../../static/assets/js/core/bootstrap.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="../../static/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../../static/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<!-- Bootstrap Toggle -->
+	<script src="../../static/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+    <!-- Echarts Maps -->
+    <script src="../../static/assets/js/plugin/echartsmap/china.js"></script>
+    <script src="../../static/assets/js/plugin/chart.js/echarts.min.js"></script>
+	<!-- jQuery Scrollbar -->
+	<script src="../../static/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Azzara JS -->
+	<script src="../../static/assets/js/ready.min.js"></script>
+
+
+	<script>
+        // map left
+        $.get('../../static/assets/js/plugin/echartsmap/china.json', function (chinaJson) {
+            echarts.registerMap('china', chinaJson);
+            var myChart = echarts.init(document.getElementById("geoMap"));
+
+            option = {
+                title: {
+                    text: '全国化妆品企业省级位置分布',
+                    subtext: 'Data from http://scxk.nmpa.gov.cn:81/xk/',
+                    sublink: 'http://scxk.nmpa.gov.cn:81/xk/',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    showDelay: 0,
+                    transitionDuration: 0.2,
+                    formatter: function (params) {
+                        var value = (params.value + '').split('.');
+                        value = value[0];
+                        return params.seriesName + '<br/>' + params.name + ': ' + value;
+                    }
+                },
+                visualMap: {
+                    left: 'left',
+                    min: 1,
+                    max: 500,
+                    itemHeight: 80,
+                    itemWidth: 12,
+                    inRange: {
+                        color: ['#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027']
+                    },
+                    text: ['High', 'Low'],           // 文本，默认为数值文本
+                    calculable: true
+                },
+                series: [
+                    {
+                        name: '数量省级分布',
+                        type: 'map',
+                        roam: true,
+                        map: 'china',
+                        emphasis: {
+                            label: {
+                                show: true
+                            }
+                        },
+                        data:{{ dataDict|tojson }}
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+        });
+
+        // bar chart right
+        var numberJson = {{ dataJson|tojson }}
+          //对数据进行排序
+        function sort_object(obj) {
+            items = Object.keys(obj).map(function(key) {
+                return [key, obj[key]];
+            });
+            items.sort(function(first, second) {
+                return -(second[1] - first[1]);
+            });
+            sorted_obj={}
+            $.each(items, function(k, v) {
+                use_key = v[0]
+                use_value = v[1]
+                sorted_obj[use_key] = use_value
+            })
+            return(sorted_obj)
+        }
+        var snumberJson = sort_object(numberJson)
+        //var snumberJson = Object.keys(numberJson).sort(function(a,b){return numberJson[a]-numberJson[b]});
+        var barChart = echarts.init(document.getElementById("horizontalBarChart"));
+
+        var option = {
+                title: {
+                    text: '具体数量',
+                    subtext: ' ',
+                    left: 'center'
+                },
+                grid: {
+                    bottom: 0,
+                    left: 10,
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    max: 500,
+                    splitLine: {
+                        show: false
+                    }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: Object.keys(snumberJson),
+                    axisLabel: {
+                        interval: 0
+                    },
+                    splitLine: {
+                        show: false
+                    }
+                },
+                series: {
+                    type: 'bar',
+                    stack: 'chart',
+                    label: {
+                        normal: {
+                            position: 'right',
+                            show: true
+                        }
+                    },
+                    data: Object.keys(snumberJson).map(function (key) {
+                        return snumberJson[key];
+                    })
+                }
+
+            }
+        barChart.setOption(option)
+
+	</script>
+ </body>
+</html>
