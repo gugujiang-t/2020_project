@@ -35,6 +35,6 @@
 - 查看可视化结果
 
 ### 页面展示
-![主界面Home](F:\dlut学习\大三\开源软件基础\测试图\主界面Home.jpg)
+![主界面Home](./static/assets/img/主界面Home.jpg)
 
-![地域分布-企业位置](F:\dlut学习\大三\开源软件基础\测试图\地域分布-企业位置.jpg)
+![地域分布-企业位置](./static/assets/img/地域分布-企业位置.jpg)
