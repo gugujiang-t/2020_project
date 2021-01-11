@@ -20,7 +20,6 @@
 
 │  cosmetic.db				----- 数据库
 
-<<<<<<< HEAD
 │  data.json				----- json格式保存的数据信息 文件
 
 └─  README.md
